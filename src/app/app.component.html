@@ -1,0 +1,50 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Topics</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item routerLink="/home">
+            <ion-icon name="business-outline" slot="start"></ion-icon>
+            <ion-label>Business</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/technology">
+            <ion-icon name="hardware-chip-outline" slot="start"></ion-icon>
+            <ion-label>Technology</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/entertainment">
+            <ion-icon name="film-outline"  slot="start"></ion-icon>
+            <ion-label>Entertainment</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/sports">
+            <ion-icon name="bicycle-outline" slot="start"></ion-icon>
+            <ion-label>Sports</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/science">
+            <ion-icon name="school-outline" slot="start"></ion-icon>
+            <ion-label>Science</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="/health">
+            <ion-icon name="fitness-outline" slot="start"></ion-icon>
+            <ion-label>Health</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
